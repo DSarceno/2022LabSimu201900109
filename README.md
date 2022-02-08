@@ -5,7 +5,7 @@ en la ECFM.
 
 ## Repositorio
 ### Archivos Importantes
-  - [Bitácora]()
+  - [Bitácora](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Diario.md)
 
 ## Documentación Externa
   - [Asciinema](https://github.com/asciinema/asciinema) para las grabaciones de la terminal de Debian y Ubuntu.
