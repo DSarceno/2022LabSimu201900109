@@ -5,8 +5,8 @@ en la ECFM.
 
 ## Repositorio
 ### Archivos Importantes
-
+  - [Bitácora]()
 
 ## Documentación Externa
   - [Asciinema](https://github.com/asciinema/asciinema) para las grabaciones de la terminal de Debian y Ubuntu.
-  - [svg-term-cli](https://github.com/marionebl/svg-term-cli) para la conversión de archivos  <code>codigo en línea</code>
+  - [svg-term-cli](https://github.com/marionebl/svg-term-cli) para la conversión de archivos <code>.cast</code> a <code>.svg</code>.
