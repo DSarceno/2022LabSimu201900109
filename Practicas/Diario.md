@@ -1,4 +1,4 @@
-# [Práctica 1](https://github.com/DSarceno/Simulation-Lab/tree/main/Practias/Practica1)
+# [Práctica 1](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Practica1/practica1.md)
 
 Diario de trabajo para la práctica 1:
 
