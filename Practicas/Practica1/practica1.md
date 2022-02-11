@@ -29,3 +29,21 @@ De las formas de pedir ayuda, me gusta más la forma de desplegarse de _man_, la
 Las instrucciones básicas, son sumamente necesarias, no importa en que sistema operativo se esté trabajando; personalmente, entre dichas instrucciones incluiría la navegación entre ficheros, pero esto es un tema posterior. En específico, hay que tomar en cuenta que el cambio de contraseña debe cumplir con los requerimientos tradicionales (longitud y no puede ser igual a la contraseña antigua).
 
 [![asciicast](https://asciinema.org/a/467708.svg)](https://asciinema.org/a/467708)
+
+###  Instrucciones de Manejo de Directorios y Archivos
+#### Navegación por Directorios
+Los comandos <code>cd</code> y <code>ls</code> son de los comandos más utilizados y más útiles en la terminal. El comando <code>pwd</code>, es algo más situacional, en casos cuando necesitas realizar una copia de un archivo/directorio en algún otro directorio, utilizar ese comando para obtener la ruta completa es bastante útil. (Realizaré más pruebas con <code>ls</code> más adelante)
+
+[![asciicast](https://asciinema.org/a/468405.svg)](https://asciinema.org/a/468405)
+
+#### Manejo de Directorios
+El manejo de directorios desde la terminal parece no muy útil, puesto que generalmente se tiene la interfaz gráfica del directorio. Sin embargo, al estar trabajando desde terminal aveces es mucho más rápido el crear o renombrar un archivo desde ahí. La creación es bastante clara (<code>mkdir</code>), mientras que la elimnación de un directorio tiene dos formas <code>rmdir</code> para directorios vacíos y <code>rm -rf</code> para forzar el borrado. (No se probó la instrucción <code>rm</code> porque se me olvidó xd, pero es simplemente para eliminar archivos y/o directorios.). La instrucción <code>mv</code> funciona tanto para mover algo a otro directorio, como para renombrar.
+
+[![asciicast](https://asciinema.org/a/468407.svg)](https://asciinema.org/a/468407)
+
+#### Manejo de Archivos
+Luego de la navegación por la terminal, los comandos más útiles son los de manejo de archivos. Creación con <code>touch</code>, visualización simple con <code>less</code> y <code>cat</code> (<code>more</code>), o visualización personalizada con <code>head</code> y <code>tail</code> con las cuales se puede escoger el número de líneas a visualizar (-n <número de líneas>). Además se tiene el comando <code>file</code> al cual no le he encontrado una gran utilidad hasta ahora.
+
+[![asciicast](https://asciinema.org/a/468410.svg)](https://asciinema.org/a/468410)
+
+#### Comandos Extras
