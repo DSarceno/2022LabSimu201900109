@@ -7,7 +7,7 @@ en la ECFM.
 ### Archivos Importantes
 En este curso casi no se trabajó con _LaTeX_ ni archivos <code>.pdf</code>, por lo que, las redirecciones se realizan hacia documentos en _MarkDown_
   - [Diario de Trabajo](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Diario.md)
-  - [Bitácora Práctica 1](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Practica1/practica1.md) y [Documento Práctica 1]()
+  - [Bitácora Práctica 1](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Practica1/practica1.md) y [Documento Práctica 1](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Practica1/Documento/doc.pdf)
 
 ## Documentación Externa
   - [Asciinema](https://github.com/asciinema/asciinema) para las grabaciones de la terminal de Debian y Ubuntu.
