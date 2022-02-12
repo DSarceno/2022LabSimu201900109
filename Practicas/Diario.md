@@ -9,3 +9,5 @@ Diario de trabajo para la práctica 1:
 | 08-02 | 20:00 - 20:20 | Instalación del sistema operativo y configuración de los programas y cuentas (gmail, asciinema, git, etc.) a utilizar. |
 | 08-02 | 20:20 - 21:00 | Inicio de la práctica 1, grabación del uso de los comandos propuestos hasta el cambio de contraseña. |
 | 11-02 | 10:40 - 11:00 | Grabación de comandos de navegación, creación y manejo de directorios y archivos. |
+| 11-02 | 16:30 - 17:00 | Se terminan con los comandos propuestos en la hoja. Falta investigar los otros comandos y realizar la última parte de la hoja. |
+| 11-02 | 18:05 - 19:30 | Se finalizó la práctica 1. |

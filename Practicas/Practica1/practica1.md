@@ -32,7 +32,7 @@ Las instrucciones básicas, son sumamente necesarias, no importa en que sistema 
 
 ###  Instrucciones de Manejo de Directorios y Archivos
 #### Navegación por Directorios
-Los comandos <code>cd</code> y <code>ls</code> son de los comandos más utilizados y más útiles en la terminal. El comando <code>pwd</code>, es algo más situacional, en casos cuando necesitas realizar una copia de un archivo/directorio en algún otro directorio, utilizar ese comando para obtener la ruta completa es bastante útil. (Realizaré más pruebas con <code>ls</code> más adelante)
+Los comandos <code>cd</code> y <code>ls</code> son de los comandos más utilizados y más útiles en la terminal. El comando <code>pwd</code>, es algo más situacional, en casos cuando necesitas realizar una copia de un archivo/directorio en algún otro directorio, utilizar ese comando para obtener la ruta completa es bastante útil.
 
 [![asciicast](https://asciinema.org/a/468405.svg)](https://asciinema.org/a/468405)
 
@@ -46,4 +46,90 @@ Luego de la navegación por la terminal, los comandos más útiles son los de ma
 
 [![asciicast](https://asciinema.org/a/468410.svg)](https://asciinema.org/a/468410)
 
-#### Comandos Extras
+### Comandos Extras
+(Para este use mi sistema operativo, no la máquina virtual, ambos son ubuntu 20.04, así que no hay problema). El comando <code>which</code> muestra la ruta de algún ejecutable, según entiendo, es el comando que más duda me genera. Para <code>sudo</code> tenemos los permisos de superusuario. No conocía el comando <code>history</code>, es bastante útil sabiendo que en algún momento se "buguee"/"crashee" algo, tener la bitácora de lo que se hizo.
+
+[![asciicast](https://asciinema.org/a/ZgZyNQrz06NRn2Xl9mak2LEz1.svg)](https://asciinema.org/a/ZgZyNQrz06NRn2Xl9mak2LEz1)
+
+### Combinación de Instrucciones
+Como en mathematica, la idea es simplificar el código lo más posible, haciendo que se puedan realizar instrucciones complejas en el menor espacio posible. En el video, la última instrucción no ejecute el comando <code>ls</code> para verificar si se creó el archivo *sample.txt*, pero adjuntaré una imagen del comando ejecutado y del <code>ls</code>.
+
+[![asciicast](https://asciinema.org/a/468461.svg)](https://asciinema.org/a/468461)
+
+<center>
+  <figure>
+    <img src="img/or.png" alt="my alt text"/>
+  </figure>  
+</center>
+<br></br>
+
+### Instrucciones Poderosas y Peligrosas
+  - <code>grep</code>: Esta instrucción busca un patrón específico en un archivo de texto (nosotros definimos ese patrón). Esto a priori es bastante inutil; sin embargo, y considerando la complejidad del análisis léxico, es uno de los comandos más versátiles que hay. Es bastante interesante el hecho que desde la terminal se pueda realizar esto. (Adjunto un pequeño programa de análisis léxico que realizé hace un tiempo: [Link](https://github.com/DSarceno/Semestre5/blob/main/Programaci%C3%B3n2/Trabajos/Practica3/analizador.py)). Aquí muestro un ejemplo bastante simple de lo que <code>grep</code> puede hacer:
+  <center>
+    <figure>
+      <img src="img/grep.png" alt="my alt text"/>
+    </figure>  
+  </center>
+  <br></br>
+  - <code>ps</code>: Este comando muestra los procesos que están en ejecución en dicho momento, como es de esperarse tiene muchas opciones para mostrar de manera más legible y/o un contenido más amplio. Es un comando que puede llegar a ser bastante útil si se dejan programas ejecutandose en segundo plano y cosas por el estilo. En la penúltima línea de la segunda terminal, se puede ver perfectamente que el ejecutable _mainRF.x_ lleva 10 segundos en ejecución.
+  <center>
+    <figure>
+      <img src="img/ps.png" alt="my alt text"/>
+    </figure>  
+  </center>
+  <br></br>
+  - <code>kill</code>: Este comando, por defecto, sirve para matar/terminar un proceso en ejecución, interactuando por medio de su PID. [Wikipedia](https://es.wikipedia.org/wiki/Kill#:~:text=En%20Unix%20y%20los%20sistemas,limpiar%20su%20estado%20y%20salir.) explica bastante bien esto. La prueba la haré matando la ejecución del programa mostrado anteriormente.
+  <center>
+    <figure>
+      <img src="img/kill.png" alt="my alt text"/>
+    </figure>  
+  </center>
+  <br></br>
+  - <code>find</code>: Este comando permite buscar la ubicación de algún archivo por medio del nombre, extención, tamaño, permisos, etc. Lo que lógicamente lo hace super útil por su flexibilidad. En el ejemplo utlizo el comando para buscar todos los archivos con extension <code>.pdf</code> en la carpeta que tengo para análisis numérico y un archivo en específico de mecánica cuántica.
+  <center>
+    <figure>
+      <img src="img/find.png" alt="my alt text"/>
+    </figure>  
+  </center>
+  <br></br>
+  - <code>du</code>: Este comando muestra el espacio total de disco utilizado en un directorio respectivo. En el ejemplo siguiente se muestra la opcion <code>-a</code> para mostrar todos los archivos (no solo directorios) y <code>-h</code> para mostrarlo de forma legible para nosotros.
+  <center>
+    <figure>
+      <img src="img/du.png" alt="my alt text"/>
+    </figure>  
+  </center>
+  <br></br>
+
+
+## Manejador de Paquetes y Comandos en Super Usuario
+Se realizó lo solicitado en la práctica, sin embargo no estoy seguro de haber comprendido bien el por qué se realizó esto. Según yo quitaba la necesidad de solicitar permisos de superusuario al usuario, valga la redundancia, seleccionado. En el video se puede ver claramente que esto no es así, por eso los primeros errores.
+
+
+[![asciicast](https://asciinema.org/a/468475.svg)](https://asciinema.org/a/468475)
+
+
+Instalación de _vim_ y _git_.
+
+
+[![asciicast](https://asciinema.org/a/468477.svg)](https://asciinema.org/a/468477)
+
+
+### Últimos Comandos
+Al ejecutar <code>rm -rf /*</code> se puede ver que no deja eliminar ningún directorio, asumo que, dado que son absolutamente todos los directorios, es necesario permisos de superusuario.
+<center>
+  <figure>
+    <img src="img/rmrf.png" alt="my alt text"/>
+  </figure>  
+</center>
+<br></br>
+
+Dado esto, se ejecutó el mismo comando con permisos de super usuario, lo que terminó en:
+
+<center>
+  <figure>
+    <img src="img/sudo_rmrf1.png" alt="my alt text"/>
+  </figure>  
+</center>
+<br></br>
+
+Creo que era de esperarse, ya que estamos eliminando todo..., luego de esto ya no era posible ejecutar ni <code>cd /ect</code> ni el calendario.
