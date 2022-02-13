@@ -32,7 +32,7 @@ Las instrucciones básicas, son sumamente necesarias, no importa en que sistema 
 
 ###  Instrucciones de Manejo de Directorios y Archivos
 #### Navegación por Directorios
-Los comandos <code>cd</code> y <code>ls</code> son de los comandos más utilizados y más útiles en la terminal. El comando <code>pwd</code>, es algo más situacional, en casos cuando necesitas realizar una copia de un archivo/directorio en algún otro directorio, utilizar ese comando para obtener la ruta completa es bastante útil.
+Los comandos `cd` y <code>ls</code> son de los comandos más utilizados y más útiles en la terminal. El comando <code>pwd</code>, es algo más situacional, en casos cuando necesitas realizar una copia de un archivo/directorio en algún otro directorio, utilizar ese comando para obtener la ruta completa es bastante útil.
 
 [![asciicast](https://asciinema.org/a/468405.svg)](https://asciinema.org/a/468405)
 
