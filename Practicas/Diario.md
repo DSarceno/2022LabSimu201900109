@@ -12,3 +12,8 @@ Diario de trabajo para la práctica 1:
 | 11-02 | 16:30 - 17:00 | Se terminan con los comandos propuestos en la hoja. Falta investigar los otros comandos y realizar la última parte de la hoja. |
 | 11-02 | 18:05 - 19:30 | Se finalizó la práctica 1. |
 | 12-02 | 11:15 - 11:20 | Creación del Documento con el link al diario de campo. Este es el documento que se entregará. (Solo contiene mis datos y el link al diario de trabajo) |
+
+
+# [Práctica 2](https://github.com/DSarceno/2022LabSimu201900109/blob/main/Practicas/Practica2/practica2.md)
+
+Diario de trabajo para la práctica 2:
