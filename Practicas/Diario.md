@@ -17,3 +17,8 @@ Diario de trabajo para la práctica 1:
 # [Práctica 2](https://github.com/DSarceno/2022LabSimu201900109/blob/main/Practicas/Practica2/practica2.md)
 
 Diario de trabajo para la práctica 2:
+
+| Fecha | Hora | Descripción de Actividades Realizadas |
+|-------|------|---------------------------------------|
+| 15-02 | 16:30 - 16:40 | Descarga del sistema operativo de Lubuntu. |
+| 15-02 | 16:50 -  | Lectura general de los entornos virtuales. |
