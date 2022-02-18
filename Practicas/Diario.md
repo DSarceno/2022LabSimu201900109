@@ -23,5 +23,4 @@ Diario de trabajo para la práctica 2:
 | 15-02 | 16:30 - 16:40 | Descarga del sistema operativo de Lubuntu. |
 | 15-02 | 16:50 - 17:20 | Lectura general de los entornos virtuales. |
 | 17-02 | 17:40 - 21:00 | Lectura de la documentación de cada entorno de escritorio. |
-| 17-02 | 21:00 - 22:00 | Escritura del documento final. Únicamente falta la
-prueba de los comandos propuestos al final de la práctica. |
+| 17-02 | 21:00 - 22:00 | Escritura del documento final. Únicamente falta laprueba de los comandos propuestos al final de la práctica. |
