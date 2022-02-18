@@ -21,4 +21,5 @@ Diario de trabajo para la práctica 2:
 | Fecha | Hora | Descripción de Actividades Realizadas |
 |-------|------|---------------------------------------|
 | 15-02 | 16:30 - 16:40 | Descarga del sistema operativo de Lubuntu. |
-| 15-02 | 16:50 -  | Lectura general de los entornos virtuales. |
+| 15-02 | 16:50 - 17:20 | Lectura general de los entornos virtuales. |
+| 17-02 | 17:40 -  | Lectura de la documentación de cada entorno de escritorio. |
