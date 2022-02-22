@@ -51,4 +51,9 @@ A diferencia del Gestor de Aplicaciones, en KDE es bastante similar al que se ti
 Desde mi punto de vista, KDE no es un escritorio que valga más la pena que el que trae por defecto Ubuntu/Debian, es un entorno fácil de utilizar, pero no más llamativo y estéticamente pobre en ciertos aspectos.
 <br></br>
 
-Dado esto, desde mi opinion personal y mi experiencia utilizando GNOME, he de decir que, a pesar de que GNOME pueda utilizar un poco más de recursos computacionales, sigue siendo bastante superior en cuanto balance estética-utilidades. Esperaba bastante más del entorno KDE, y estaba bastante interesado en el entorno Cinnamon, entre estos dos, si tuviera que escoger, tomaría KDE.
+Dado esto, desde mi opinion personal y mi experiencia utilizando GNOME, he de decir que, a pesar de que GNOME pueda utilizar un poco más de recursos computacionales, sigue siendo bastante superior en cuanto balance estética-utilidades. Esperaba bastante más del entorno KDE, y estaba bastante interesado en el entorno Cinnamon, entre estos dos, si tuviera que escoger, tomaría KDE. Además, el GUI base de Lubuntu es bastante completo, muchas de las cosas ofrecidas por este entorno están mejor en cuanto a estética que en los otros dos probados. Además, incluye `vim`, cosa que me pareció curioso.
+
+
+## Instrucciones Peligrosas
+
+Ejecutando `sudo apt-get purge ubuntu-desktop`
