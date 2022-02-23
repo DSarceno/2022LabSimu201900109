@@ -24,3 +24,4 @@ Diario de trabajo para la práctica 2:
 | 15-02 | 16:50 - 17:20 | Lectura general de los entornos virtuales. |
 | 17-02 | 17:40 - 21:00 | Lectura de la documentación de cada entorno de escritorio. |
 | 17-02 | 21:00 - 22:00 | Escritura del documento final. Únicamente falta laprueba de los comandos propuestos al final de la práctica. |
+| 22-02 | 21:35 - 21:50 | Se finalizó la práctica, se creó el documento con el link al archivo _markdown_ y se subió al classroom. |

@@ -56,4 +56,28 @@ Dado esto, desde mi opinion personal y mi experiencia utilizando GNOME, he de de
 
 ## Instrucciones Peligrosas
 
-Ejecutando `sudo apt-get purge ubuntu-desktop`
+Ejecutando `sudo apt-get purge ubuntu-desktop`, `sudo apt-get purge xubuntu-desktop` y `sudo apt-get purge kubuntu-desktop`, las cuales no realizaron aboslutamente nada en el sistema como se puede ver a continuación:
+
+### `sudo apt-get purge ubuntu-desktop`
+
+![ubuntu](./img/ubuntu-desktop.png)
+
+### `sudo apt-get purge xubuntu-desktop`
+
+![xubuntu](./img/xubuntu-desktop.png)
+
+### `sudo apt-get purge kubuntu-desktop`
+
+![kubuntu](./img/kubuntu-desktop.png)
+
+Dado que ninguno de estos entornos estaba instalado, tiene bastante sentido que no hicieran nada los comandos.
+
+### `sudo apt-get purge lubuntu-desktop`
+
+Entonces se probó con el entorno genérico de _lubuntu_, lo cual tampoco hizo nada. Por recomendación de un compañero, ejecuté el comando desde otro entorno de trabajo, en concreto _cinnamon_, y se borraron todos los archivos muertos con `sudo apt autoremove`, con esto se logró eliminar el escritorio. Posteriormente se muestran las imagenes que describen lo dicho anteriormente.
+
+![lubuntu](./img/lubuntu.png)
+
+![autoremoveLubuntu](./img/autoremoveLubuntu.png)
+
+![purgeLubuntu](./img/purgeLubuntu.png)
