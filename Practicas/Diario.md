@@ -25,3 +25,12 @@ Diario de trabajo para la práctica 2:
 | 17-02 | 17:40 - 21:00 | Lectura de la documentación de cada entorno de escritorio. |
 | 17-02 | 21:00 - 22:00 | Escritura del documento final. Únicamente falta laprueba de los comandos propuestos al final de la práctica. |
 | 22-02 | 21:35 - 21:50 | Se finalizó la práctica, se creó el documento con el link al archivo _markdown_ y se subió al classroom. |
+
+
+# [Práctica 3](https://github.com/DSarceno/2022LabSimu201900109/blob/main/Practicas/Practica3/practica3.md)
+
+Diario de trabajo para la práctica 3:
+
+| Fecha | Hora | Descripción de Actividades Realizadas |
+|-------|------|---------------------------------------|
+| 15-02 | 16:30 - 16:40 | Descarga del sistema operativo de Lubuntu. |
