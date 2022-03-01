@@ -1,4 +1,5 @@
-# [Práctica 1](./practica1/practica1.md)
+# Diario de Trabajo
+## [Práctica 1](./practica1/practica1.md)
 
 Diario de trabajo para la práctica 1:
 
@@ -14,7 +15,7 @@ Diario de trabajo para la práctica 1:
 | 12-02 | 11:15 - 11:20 | Creación del Documento con el link al diario de campo. Este es el documento que se entregará. (Solo contiene mis datos y el link al diario de trabajo) |
 
 
-# [Práctica 2](./practica2/practica2.md)
+## [Práctica 2](./practica2/practica2.md)
 
 Diario de trabajo para la práctica 2:
 
@@ -27,7 +28,7 @@ Diario de trabajo para la práctica 2:
 | 22-02 | 21:35 - 21:50 | Se finalizó la práctica, se creó el documento con el link al archivo _markdown_ y se subió al classroom. |
 
 
-# [Práctica 3](./practica3/practica3.md)
+## [Práctica 3](./practica3/practica3.md)
 
 Diario de trabajo para la práctica 3:
 
