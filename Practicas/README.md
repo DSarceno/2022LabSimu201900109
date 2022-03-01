@@ -34,4 +34,5 @@ Diario de trabajo para la práctica 3:
 
 | Fecha | Hora | Descripción de Actividades Realizadas |
 |-------|------|---------------------------------------|
-| 15-02 | 16:30 - 16:40 | Descarga del sistema operativo de Lubuntu. |
+| 01-03 | 14:10 - 14:40 | Instalación del docker, ejecución del _hello world_ y explicación de todos los comandos dados en el _Dockerfile_ así como su creación. |
+| 01-03 |  |  |
