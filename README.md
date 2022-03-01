@@ -12,6 +12,7 @@ En este curso casi no se trabajó con _LaTeX_ ni archivos <code>.pdf</code>, por
   - [Diario de Trabajo](./Practicas/Diario.md)
   - [Bitácora Práctica 1](./Practicas/Practica1/practica1.md) y [Documento Práctica 1](./Practicas/Practica1/Documento/doc.pdf)
   - [Bitácora Práctica 2](./Practicas/Practica2/practica2.md) y [Documento Práctica 2](./Practicas/Practica2/Documento/doc.pdf)
+  - [Bitácora Práctica 3](./Practicas/Practica3/practica3.md)
 
 ## Documentación Externa
   - [Asciinema](https://github.com/asciinema/asciinema) para las grabaciones de la terminal de Debian y Ubuntu.
