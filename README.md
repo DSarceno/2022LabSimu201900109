@@ -4,11 +4,14 @@ Repositorio dedicado a los trabajos del curso de Laboratorio de Simulación
 en la ECFM.
 
 ## Repositorio
+![CODE_SIZE](https://img.shields.io/github/languages/code-size/DSarceno/2022LabSimu201900109?style=for-the-badge)
+![REPO_SIZE](https://img.shields.io/github/repo-size/DSarceno/2022LabSimu201900109?style=for-the-badge&color=orange)
+![TOP_LANGUAJE](https://img.shields.io/github/languages/top/DSarceno/2022LabSimu201900109?color=FF0000&style=for-the-badge)
 ### Archivos Importantes
 En este curso casi no se trabajó con _LaTeX_ ni archivos <code>.pdf</code>, por lo que, las redirecciones se realizan hacia documentos en _MarkDown_
   - [Diario de Trabajo](./Practicas/Diario.md)
-  - [Bitácora Práctica 1](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Practica1/practica1.md) y [Documento Práctica 1](https://github.com/DSarceno/Simulation-Lab/blob/main/Practicas/Practica1/Documento/doc.pdf)
-  - [Bitácora Práctica 2](https://github.com/DSarceno/2022LabSimu201900109/blob/main/Practicas/Practica2/practica2.md)
+  - [Bitácora Práctica 1](./Practicas/Practica1/practica1.md) y [Documento Práctica 1](./Practicas/Practica1/Documento/doc.pdf)
+  - [Bitácora Práctica 2](./Practicas/Practica2/practica2.md) y [Documento Práctica 2](./Practicas/Practica2/Documento/doc.pdf)
 
 ## Documentación Externa
   - [Asciinema](https://github.com/asciinema/asciinema) para las grabaciones de la terminal de Debian y Ubuntu.
