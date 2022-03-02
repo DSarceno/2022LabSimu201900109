@@ -35,4 +35,5 @@ Diario de trabajo para la práctica 3:
 | Fecha | Hora | Descripción de Actividades Realizadas |
 |-------|------|---------------------------------------|
 | 01-03 | 14:10 - 14:40 | Instalación del docker, ejecución del _hello world_ y explicación de todos los comandos dados en el _Dockerfile_ así como su creación. |
-| 01-03 |  |  |
+| 01-03 | 16:00 - 18:10 | Ejecución de los comandos para crear la imagen de ubuntu. Asistí a la sesión de dudas. Se logró crear la imagen, solucionar problemas y se dejo la base para el "ejercicio 1". |
+| 01-03 | 19:10 -  | Se realizó el "ejercicio 1" y "ejercicio 2". |
