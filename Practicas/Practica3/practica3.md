@@ -98,7 +98,7 @@ Se muestra exactamente la misma cantidad de información, pero de otra forma. Se
 
 
 ## Git y GitHub
-Para este curso ya había creado un repositorio local y su respectivo repositorio en _GitHub_ desde la práctica 1, le cambié el nombre a _"2022LabSimu201900109"_ y el repositorio puede ser encontrado en el siguiente [link](https://github.com/DSarceno/2022LabSimu201900109) (en el que se pueden ver todas las especificaciones dadas, tales como la licencia del MIT, las carpetas solicitadas, etc.). Se creó la carpeta __Bash__ y se añadieron los ejercicios 1 y 2 a la carpeta.
+Para este curso ya había creado un repositorio local y su respectivo repositorio en _GitHub_ desde la práctica 1, le cambié el nombre a _"2022LabSimu201900109"_ y el repositorio puede ser encontrado en el siguiente [link](https://github.com/DSarceno/2022LabSimu201900109) (en el que se pueden ver todas las especificaciones dadas, tales como la licencia del MIT, las carpetas solicitadas, etc.). Se creó la carpeta [_Bash_](https://github.com/DSarceno/2022LabSimu201900109/tree/main/Bash) y se añadieron los ejercicios 1 y 2 a la carpeta.
 
 ![CarpetaBash](./img/CarpetaBash.png)
 
