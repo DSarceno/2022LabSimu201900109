@@ -98,7 +98,7 @@ Se muestra exactamente la misma cantidad de información, pero de otra forma. Se
 
 
 ## Git y GitHub
-Para este curso ya había creado un repositorio local y su respectivo repositorio en _GitHub_ desde la práctica 1, le cambié el nombre a _"2022LabSimu201900109"_ y el repositorio puede ser encontrado en el siguiente [link](https://github.com/DSarceno/2022LabSimu201900109). Se creó la carpeta __Bash__ y se añadieron los ejercicios 1 y 2 a la carpeta.
+Para este curso ya había creado un repositorio local y su respectivo repositorio en _GitHub_ desde la práctica 1, le cambié el nombre a _"2022LabSimu201900109"_ y el repositorio puede ser encontrado en el siguiente [link](https://github.com/DSarceno/2022LabSimu201900109) (en el que se pueden ver todas las especificaciones dadas, tales como la licencia del MIT, las carpetas solicitadas, etc.). Se creó la carpeta __Bash__ y se añadieron los ejercicios 1 y 2 a la carpeta.
 
 ![CarpetaBash](./img/CarpetaBash.png)
 
@@ -107,3 +107,7 @@ Ya con la carpeta creada se crea el archivo _elementos.txt_ y se añade al `.git
 ![Gitignore](./img/Gitignore.png)
 
 Yo para hacer el `git status`, `git add`, `git commit -m {$1}` y `git push`, tengo dos comandos que fusionan varios de estos en uno solo. Estos dos comandos son `gs` para el `git status` y `acp "{$1}"` para el `git add`, `git commit -m {$1}` y `git push`. Con esto agrego todo al repositorio local y directamente al repositorio remoto en GitHub.
+
+![Final](./img/Final.png)
+
+Con esta útilma imagen se puede ver que el archivo _elementos.txt_ si existe en el repositorio local, pero en el remoto no aparece, por lo que el `.gitignore` si está funcionando.
