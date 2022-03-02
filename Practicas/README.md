@@ -36,4 +36,4 @@ Diario de trabajo para la práctica 3:
 |-------|------|---------------------------------------|
 | 01-03 | 14:10 - 14:40 | Instalación del docker, ejecución del _hello world_ y explicación de todos los comandos dados en el _Dockerfile_ así como su creación. |
 | 01-03 | 16:00 - 18:10 | Ejecución de los comandos para crear la imagen de ubuntu. Asistí a la sesión de dudas. Se logró crear la imagen, solucionar problemas y se dejo la base para el "ejercicio 1". |
-| 01-03 | 19:10 -  | Se realizó el "ejercicio 1" y "ejercicio 2". |
+| 01-03 | 19:10 -  21:20 | Se realizó el "ejercicio 1" y "ejercicio 2". Luego de realizar lo solicitado, se subió todo al repositorio remoto en [GitHub](https://github.com/DSarceno/2022LabSimu201900109) y se finalizó la práctica. |
