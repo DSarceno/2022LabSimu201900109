@@ -1,7 +1,7 @@
 # Problemas de Programación
 En este fichero se encuentran todos los problemas dejados en clase.
 
-### Problema 1
+## Problema 1
 Enunciado del problema:
 ![problema1](./img/problema1.png)
 
