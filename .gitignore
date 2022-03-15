@@ -1,2 +1,4 @@
 elementos.txt
 Pruebas/
+*.o
+*.x

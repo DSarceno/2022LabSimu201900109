@@ -12,6 +12,6 @@ header
 echo Ingrese el nombre del archivo sin extencion
 read name
 
-# CreaciÃn del header
+# Creaciï¿½n del header
 fecha=$(date)
-echo -e "//	$fecha \n//	$name.c \n//	Diego Sarceno (dsarceno68@gmail.com) \n\n//	Resumen \n\n//	Codificado del texto: UTF8 \n//	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0 \n//	Instruciones de Compilacion: no requiere nada mas \n//	gcc -Wall -pedantic -std=c11 -c -o $name.o $name.c \n//	gcc -o $name.x $name.o \n\n//	Librerias \n//	#include <stdio.h>" > $name.c
+echo -e "//	$fecha \n//	$name.c \n//	Diego Sarceno (dsarceno68@gmail.com) \n\n//	Resumen \n\n//	Codificado del texto: UTF8 \n//	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0 \n//	Instruciones de Compilacion: no requiere nada mas \n//	gcc -Wall -pedantic -std=c11 -c -o $name.o $name.c \n//	gcc -o $name.x $name.o \n\n//	Librerias \n#include <stdio.h>" > $name.c
