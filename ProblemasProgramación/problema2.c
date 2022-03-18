@@ -2,7 +2,8 @@
 //	problema2.c
 //	Diego Sarceno (dsarceno68@gmail.com)
 
-//	Resumen
+//	El programa recibe un número indefinidio de alturas, y termina de obtener
+//  datos al ingresar una negativa. Retorna la media, el máximo y mínimo.
 
 //	Codificado del texto: UTF8
 //	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0
