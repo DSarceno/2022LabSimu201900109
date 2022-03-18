@@ -57,4 +57,5 @@ int main(){
   } else {
     printf("No positivos. \n");
   } // END IF
+  return 0;
 } // END MAIN
