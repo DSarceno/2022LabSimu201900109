@@ -26,3 +26,23 @@ $ gcc -Wall -pedantic -std=c11 -c -o problema1While.o problema1While.c
 $ gcc -o problema1While.x problema1While.o
 $ ./problema1While.x
 ```
+
+## Problema 2
+Enunciado del problema:
+![problema2](./img/problema2.png)
+
+**Variables Declaradas:**
+  - `x`: input del usuario (número real).
+  - `n`: cantidad de números positivos ingresados.
+  - `media`: suma de los números positivos, posteriormente se difidirá entre `n`.
+  - `max`: número máximo ingresado.
+  - `min`: número mínimo ingresado.
+
+**Instrucciones de Ejecución y Compilación:**
+
+*Programa realizado con el ciclo For:*
+```
+$ gcc -Wall -pedantic -std=c11 -c -o problema2.o problema2.c
+$ gcc -o problema2.x problema2.o
+$ ./problema2.x
+```
