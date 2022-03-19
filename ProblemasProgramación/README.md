@@ -39,10 +39,41 @@ Enunciado del problema:
   - `min`: número mínimo ingresado.
 
 **Instrucciones de Ejecución y Compilación:**
-
-*Programa realizado con el ciclo For:*
 ```
 $ gcc -Wall -pedantic -std=c11 -c -o problema2.o problema2.c
 $ gcc -o problema2.x problema2.o
 $ ./problema2.x
+```
+
+## Problema 3
+Enunciado del problema:
+![problema3](./img/problema3.png)
+
+**Variables Declaradas:**
+  - `i`: iterador y raíz entera, el *output* es `i-1`.
+  - `N`: número ingresado por el usuario.
+
+
+**Instrucciones de Ejecución y Compilación:**
+```
+$ gcc -Wall -pedantic -std=c11 -c -o problema3.o problema3.c
+$ gcc -o problema3.x problema3.o
+$ ./problema3.x
+```
+
+## Problema 4
+Enunciado del problema:
+![problema4](./img/problema4.png)
+
+**Variables Declaradas:**
+  - `i`: iterador y divisor en la operación módulo (`%`) para de terminar si un número tiene o no divisores.
+  - `primo`: booleano que determina si el número es primo o no (variable de control).
+  - `N`: número ingresado por el usuario.
+
+
+**Instrucciones de Ejecución y Compilación:**
+```
+$ gcc -Wall -pedantic -std=c11 -c -o problema4.o problema4.c
+$ gcc -o problema4.x problema4.o
+$ ./problema4.x
 ```
