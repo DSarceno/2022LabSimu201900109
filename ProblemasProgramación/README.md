@@ -77,3 +77,20 @@ $ gcc -Wall -pedantic -std=c11 -c -o problema4.o problema4.c
 $ gcc -o problema4.x problema4.o
 $ ./problema4.x
 ```
+
+## [Problema 5](https://github.com/DSarceno/2022LabSimu201900109/blob/main/ProblemasProgramaci%C3%B3n/problema4.c)
+Enunciado del problema:
+![problema4](./img/problema5.png)
+
+**Variables Declaradas:**
+  - `i`: iterador y divisor en la operación módulo (`%`) para de terminar si un número tiene o no divisores.
+  - `primo`: booleano que determina si el número es primo o no (variable de control).
+  - `N`: número ingresado por el usuario.
+
+
+**Instrucciones de Ejecución y Compilación:**
+```
+$ gcc -Wall -pedantic -std=c11 -c -o problema4.o problema4.c
+$ gcc -o problema4.x problema4.o
+$ ./problema4.x
+```
