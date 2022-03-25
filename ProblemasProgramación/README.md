@@ -78,7 +78,7 @@ $ gcc -o problema4.x problema4.o
 $ ./problema4.x
 ```
 
-## [Problema 5](https://github.com/DSarceno/2022LabSimu201900109/blob/main/ProblemasProgramaci%C3%B3n/problema4.c)
+## [Problema 5](https://github.com/DSarceno/2022LabSimu201900109/blob/main/ProblemasProgramaci%C3%B3n/problema5.c)
 Enunciado del problema:
 ![problema4](./img/problema5.png)
 
