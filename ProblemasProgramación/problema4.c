@@ -16,12 +16,13 @@
 // 1. funcion main
 int main(){
   // 2. definir variables
-  int i = 2, primo = 1;
+  int i = 2;
+  int primo = 1;
   int n;
 
   // 3. leemos el valor de N
-  puts("Ingrese un número entero positivo.");
-  scanf("%d \n", &n);
+  printf("Ingrese un número entero positivo. \n");
+  scanf("%d", &n);
 
   // 4. Ingresamos al while
   while ((i < n) && (primo == 1)){
@@ -39,7 +40,7 @@ int main(){
   if (primo == 0){
     puts("El número no es primo.");
   } else {
-    puts("El númeor es primo.");
+    puts("El número es primo.");
   } // END IF
   return 0;
 } // END MAIN FUNCTION

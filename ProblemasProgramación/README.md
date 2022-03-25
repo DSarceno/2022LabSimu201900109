@@ -83,14 +83,17 @@ Enunciado del problema:
 ![problema4](./img/problema5.png)
 
 **Variables Declaradas:**
-  - `i`: iterador y divisor en la operación módulo (`%`) para de terminar si un número tiene o no divisores.
-  - `primo`: booleano que determina si el número es primo o no (variable de control).
-  - `N`: número ingresado por el usuario.
+  - `n1`: número inicial del intervalo (input del usuario).
+  - `n2`: número final del intervalo (input del usuario).
+
+**Funciones utilizadas**
+  - `es_primo`: recibe un número y determina si es primo, devuelve un valor
+    booleano: 0 si no es primo y 1 si lo es.
 
 
 **Instrucciones de Ejecución y Compilación:**
 ```
-$ gcc -Wall -pedantic -std=c11 -c -o problema4.o problema4.c
-$ gcc -o problema4.x problema4.o
-$ ./problema4.x
+$ gcc -Wall -pedantic -std=c11 -c -o problema5.o problema5.c
+$ gcc -o problema5.x problema5.o
+$ ./problema5.x
 ```
