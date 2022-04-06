@@ -101,20 +101,20 @@ $ ./problema5.x
 
 ## [Problema 6](https://github.com/DSarceno/2022LabSimu201900109/blob/main/ProblemasProgramaci%C3%B3n/problema6.c)
 Enunciado del problema:
-![problema4](./img/problema5.png)
+![problema4](./img/problema6.png)
 
 **Variables Declaradas:**
-  - `n1`: número inicial del intervalo (input del usuario).
-  - `n2`: número final del intervalo (input del usuario).
+  - `n`: Cantidad de vértices del poligono.
+  - `sum`: Variable de almacenamiento de la súma mostrada en la fórmula.
+  - `A`: Output, área del poligono.
+  - `x`: Array de almacenamiento de las coordenadas en x.
+  - `y`: Array de almacenamiento de las coordenadas en y.
 
-**Funciones utilizadas**
-  - `es_primo`: recibe un número y determina si es primo, devuelve un valor
-    booleano: 0 si no es primo y 1 si lo es.
 
 
 **Instrucciones de Ejecución y Compilación:**
 ```
-$ gcc -Wall -pedantic -std=c11 -c -o problema5.o problema5.c
-$ gcc -o problema5.x problema5.o
-$ ./problema5.x
+$ gcc -Wall -pedantic -std=c11 -c -o problema6.o problema6.c
+$ gcc -o problema6.x problema6.o -lm
+$ ./problema6.x
 ```
