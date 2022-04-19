@@ -23,9 +23,17 @@ int main(){
   float sum = 0;
   float A;
 
-  // 3. Lectura del número de vértices
+  // 3. Lectura del número de vértices, comprueba que el número ingresado sea
+  // mayor o igual a 3
   puts("Ingrese el número de vértices de su poligono.");
   scanf("%d",&n);
+
+  if (n < 3){
+    while (n < 3){
+      puts("Ingrese un número de vértices que generen un políono.");
+      scanf("%d",&n);
+    } // END WHILE
+  } // END IF
 
   // 4. Declaración de los arrays para el almacenaje de los datos.
   float x[n];
