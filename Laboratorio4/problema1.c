@@ -2,7 +2,7 @@
 //	problema1.c
 //	Diego Sarceno (dsarceno68@gmail.com)
 
-//	Este programa crea y muestra una lista de 10 elementos de números pares
+//	Este programa crea y muestra una lista de 10 elementos de numeros pares
 //  y solicita al usuario en que orden desea que se ordene
 //  (ascendente/descendente). Para el ordenamiento se utiliza el algoritmo
 //  merge-sort.
