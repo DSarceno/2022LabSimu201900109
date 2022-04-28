@@ -14,6 +14,8 @@ En este curso casi no se trabajó con _LaTeX_ ni archivos <code>.pdf</code>, por
   - [Bitácora Práctica 2](./Practicas/Practica2/practica2.md) y [Documento Práctica 2](./Practicas/Practica2/Documento/doc.pdf)
   - [Bitácora Práctica 3](./Practicas/Practica3/practica3.md)
   - [Problemas de Programación](https://github.com/DSarceno/2022LabSimu201900109/blob/main/ProblemasProgramaci%C3%B3n/README.md)
+  - [Práctica 4](https://github.com/DSarceno/2022LabSimu201900109/tree/main/Laboratorio4)
+  - [Segundo Parcial](https://github.com/DSarceno/2022LabSimu201900109/tree/main/SegundoParcial)
 
 ## Documentación Externa
   - [Asciinema](https://github.com/asciinema/asciinema) para las grabaciones de la terminal de Debian y Ubuntu.
