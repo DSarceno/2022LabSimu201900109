@@ -16,7 +16,7 @@
 #include <math.h>
 
 // 0. Prototipado de funciones y declaracion de variables
-double sqrt(double x);
+//double sqrt(double x);
 void printArrays(float array[], int length);
 void suma_vectorial(float array1[], float array2[], float result[]);
 float magnitud(float array[]);
@@ -46,7 +46,7 @@ int main(){
   puts("Producto vectorial entre ambos vectores.");
   printArrays(resvec, 3);
   // 4.4. inner product
-  printf("Producto interno entre ambos vectores: %f",producto_interno(vec1,vec2));
+  printf("Producto interno entre ambos vectores: %f\n",producto_interno(vec1,vec2));
 
   return 0;
 } // END MAIN
@@ -97,12 +97,12 @@ void suma_vectorial(float array1[], float array2[], float result[]){
 
 float magnitud(float array[]){
   //double sqrt(double x);
-  float result;
+  float norm = 0;
 
   for (int i = 0; i < 3; i++){
-    result = array[i]*array[i];
+    norm += pow(array[i],2);
   } // END FOR
-  return result;
+  return sqrt(norm);
 } // END SUMA_VECTORIAL
 
 

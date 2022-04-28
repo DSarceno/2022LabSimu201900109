@@ -138,11 +138,11 @@ void prod_matrices(float array1[][col], float array2[][col], int m, int n, float
 } // END prod_matrices
 
 
-float determinante(float array[][col], int n){
+float determinante(float array[][col], int orden){
   float det = 0;
 
-  for (int i = 0; i < n; i++){
-    det += array[0][i]*cofactor(array, n, 0, i);
+  for (int i = 0; i < orden; i++){
+    det += array[0][i]*cofactor(array, orden, 0, i);
   } // END FOR
 
   return det;
@@ -150,25 +150,29 @@ float determinante(float array[][col], int n){
 
 
 
-float cofactor(float array[][col], int n, int file, int column){
-  float subarray[n][n];
-  int t = n - 1;
+float cofactor(float array[][col], int orden, int file, int column){
+  int nuevo_orden = orden - 1;
+  float subarray[nuevo_orden][nuevo_orden];
   int x = 0, y = 0;
 
-  for (int i = 0; i < n; i++){
-    for (int j = 0; j < n; j++){
+  for (int i = 0; i < orden; i++){
+    for (int j = 0; j < orden; j++){
       if (i != file && j != column){
         subarray[x][y] = array[i][j];
+        y++;
+        /*
         y++;
         if (y >= t){
           x++;
           y = 0;
         } // END IF
+        */
       } // END IF
     } // END FOR
+    x++;
   } // END FOR
   // pow(-1, file + column)*
-  return determinante(subarray, t);
+  return pow(-1, file + column)*determinante(subarray, nuevo_orden);
 } // END cofactor
 
 
