@@ -63,10 +63,47 @@ $ ./problema1.x
 | Mínimos Cuadrados | 0.445515 | 19.666668 | 0.964707 |
 | Ajuste Gnuplot | 0.445515 | 19.6667 | Not given. |
 
+**Gráfica Mínimos Cuadrados**
+
+![mincuadp1](./img/mincuadp1.png)
+
+**Gráfica Ajuste Lineal _Gnuplot_**
+
+![ajustep1](./img/ajustep1.png)
+
+
 ## [Problema 2](https://github.com/DSarceno/2022LabSimu201900109/blob/main/SegundoParcial/problema2.c)
 #### Enunciado
+Utilizando un método numérico, encuentre una raı́z de la ecuación
+
+![p2](./img/problema2.png)
+
+Debe de realizar la gráfica de la ecuación y comparar el resultado obtenido con el programa realizado en C.
+
 #### Metodología
+Para encontrar la raíz de la función dada se utilizó el método de **Bisección**, el cual consiste en ingresar un límite inferior y uno superior sobre los cuales la raíz deseada esté acotada. Por medio de valuaciones de los limites y el punto medio del intervalo se va achicando el intervalo siempre que se encuentre un resultado con signos distintos. El algoritmo es el siguiente:
+
+Dados los extremos del intervalo, se calcula p = (inflim + suplim)/2. Con esto se inician las iteraciones validando:
+
+  Si f(inflim)*f(p) > 0 (es decir que no se tiene cambio de signo en el intervalo (inflim,p)) entonces se quita el límite inferior y se sustituye por p, i.e. inflim = p. En otro caso se quita el límite superior, suplim = p. El bucle para debido a que se superaron las iteraciones o la distancia entre ambos límites es menor a la tolerancia.
+
 #### Variables
+- `x_inicial`: Limite inferior que acota la raíz.
+- `x_final`: Limite superior que acota la raíz.
+- `iteraciones`: Número máximo de iteraciones.
+- `tolerancia`: Diferencia máxima entre los valores de los límites para que el resultado sea válido.
+- `f(x)`: Función dada en el problema.
+- `biseccion(inflim, suplim, iteraciones, tolerancia)`: Función que aplica el método de bisección explicado anteriormente.
+
 #### Diagrama de Flujo
 #### Instrucciones de Complilación y Ejecución
+```
+$ gcc -Wall -pedantic -std=c11 -c -o problema2.o problema2.c
+$ gcc -o problema2.x problema2.o -lm
+$ ./problema2.x
+```
+
 #### Resultados
+El valor obtenido de la raíz por medio del método de **bisección** es: (1.007624,0). Comparado con la gráfica de la función sería
+
+![raiz](./img/raiz.png)

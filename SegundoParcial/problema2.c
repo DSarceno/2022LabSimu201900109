@@ -1,9 +1,8 @@
-//	mié 27 abr 2022 22:31:19 CST
+//	jue 28 abr 2022 23:17:08 CST
 //	problema2.c
 //	Diego Sarceno (dsarceno68@gmail.com)
 
-//	Encuentra la raíz de la función propuesta en el examen por medio del método
-//  Newton-Raphson
+//	Resumen
 
 //	Codificado del texto: UTF8
 //	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0
@@ -18,74 +17,59 @@
 
 // 0. Prototipado de funciones y definicion de Variables
 float f(float x);
-float df(float x);
-void newtonRaphson(float x_inicial, float tolerancia, int max, int *actiter, float *sol);
+float biseccion(float inflim, float suplim, int iteraciones, float tolerancia);
 
+// 1. funcion main
 int main(){
-  // 1. variables
-  float x_inicial, tolerancia, raiz;
-  int iteraciones, aiteracion;
+  // 2. variables utiles
+  float x_inicial, x_final, tolerancia;
+  int iteraciones;
 
-  // 2. ingreso de datos
-  puts("Ingrese un valor aproximado de la raíz");
-  scanf("%f", &x_inicial);
-  puts("Ingrese la tolerancia aceptada para el resultado.");
-  scanf("%f", &tolerancia);
-  puts("Ingrese un número de iteraciones máximo");
-  scanf("%d", &iteraciones);
+  // 3. ingreso de variables por parte del usuario
+  puts("Límite inferior de la raíz.");
+  scanf("%f",&x_inicial);
+  puts("Límite superior de la raíz.");
+  scanf("%f",&x_final);
+  puts("Número máximo de iteraciones.");
+  scanf("%d",&iteraciones);
+  puts("Tolerancia aceptada.");
+  scanf("%f",&tolerancia);
 
-  // aplicamos la funcion
-  newtonRaphson(x_inicial, tolerancia, iteraciones, &aiteracion, &raiz);
 
-  // comprobamos si hay o no solución con la tolerancia y cantidad de iteracioens dadas.
-  if (aiteracion == iteraciones){
-    printf("No hay solución luego de %d iteraciones.", aiteracion);
-  } else {
-    printf("Solución: (%f,0)", raiz);
-  }
-
+  // 4. Llamada a las funciones
+  puts("inflim \t\t f(inflim) \t\t suplim \t\t f(suplim) \t\t p \t\t f(p)");
+  biseccion(x_inicial, x_final, iteraciones, tolerancia);
   return 0;
-} // END main
-
-
-
-/*
-                            FUNCIONES
-*/
+} // END Main
 
 float f(float x){
   return (2 - exp(x) + cos(exp(x) - 2));
-  //return (tan(x));
 } // END f
-/*
-float df(float x){
-  //return (-exp(x) - sin(exp(x) - 2)*exp(x));
-  return(-1/(sin(x)*sin(x)));
-} // END df
-*/
 
-void newtonRaphson(float x_inicial, float tolerancia, int max, int *actiter, float *sol){
-  // variables de paso y diferencia
-  float h = 0.0001; // valor para la aproximacion de la derivada
-  float df;
-  float x = x_inicial;
-  int i = 0;
+float biseccion(float inflim, float suplim, int iteraciones, float tolerancia){
+  // punto medio del intervalo
+  float p;
 
-  // calculo aproximado de la derivada
-  df = (f(x + h) - f(x - h))/(2*h);
-
-  // bucle para aproximar el valor de la raiz
-  for (i = 0; i < max; i++){
-    x += f(x)/df;
-    printf("x[%d] = %f \t f(x[%d]) = %f \n", i, x, i, f(x));
-    if (fabs(f(x)) < tolerancia){ break; }
+  p = (inflim + suplim)/2; // definicion del punto medio
+  printf("%f \t %f \t %f \t %f \t %f \t %f\n", inflim, f(inflim), suplim, f(suplim), p, f(p));
+  for (int i = 0; i < iteraciones; i++){
+    p = (inflim + suplim)/2; // se vuelve a definir para que este dentreo del ciclo
+    if (f(inflim)*f(p) > 0){ // deteccion de la variación de signo
+      inflim = p;
+    } else {
+      suplim = p;
+    } // END IF
+    printf("%f \t %f \t %f \t %f \t %f \t %f\n", inflim, f(inflim), suplim, f(suplim), p, f(p));
+    if (fabs(inflim - suplim) < tolerancia){ break; } // se llego a la tolerancia
   } // END FOR
+  return 0;
+} // END biseccion
 
-  // Resultados
-  *sol = x;
-  *actiter = i;
 
-} // END newtonRaphson
+
+
+
+
 
 
 
