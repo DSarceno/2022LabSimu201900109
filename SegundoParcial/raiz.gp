@@ -13,8 +13,8 @@
 # Idioma
 set encoding utf8
 # terminal
-set terminal pdf
-set output "raiz.pdf"
+set terminal png
+set output "raiz.png"
 set grid
 set title "Raíz Encontrada"
 set key left top box

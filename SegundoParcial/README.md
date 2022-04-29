@@ -96,6 +96,10 @@ Dados los extremos del intervalo, se calcula p = (inflim + suplim)/2. Con esto s
 - `biseccion(inflim, suplim, iteraciones, tolerancia)`: Función que aplica el método de bisección explicado anteriormente.
 
 #### Diagrama de Flujo
+![problema2flux](./img/problema2flux.png)
+
+No aparece en el diagrama de flujo, pero obviamente la otra función utilizada es la función dada en el problema.
+
 #### Instrucciones de Complilación y Ejecución
 ```
 $ gcc -Wall -pedantic -std=c11 -c -o problema2.o problema2.c
@@ -106,4 +110,4 @@ $ ./problema2.x
 #### Resultados
 El valor obtenido de la raíz por medio del método de **bisección** es: (1.007624,0). Comparado con la gráfica de la función sería
 
-![raiz](./img/raiz.png)
+![raiz](raiz.png)
