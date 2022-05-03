@@ -14,7 +14,7 @@
 set encoding utf8
 # terminal
 set terminal pdf
-set output "combustible.pdf"
+set output "./img/combustible.pdf"
 set grid
 set title "Variación del Precio del Combustible en el Tiempo"
 set key left top box

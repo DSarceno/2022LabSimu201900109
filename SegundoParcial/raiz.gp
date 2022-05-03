@@ -14,7 +14,7 @@
 set encoding utf8
 # terminal
 set terminal png
-set output "raiz.png"
+set output "./img/raiz.png"
 set grid
 set title "Raíz Encontrada"
 set key left top box

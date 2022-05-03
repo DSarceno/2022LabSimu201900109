@@ -63,6 +63,8 @@ $ ./problema1.x
 | Mínimos Cuadrados | 0.445515 | 19.666668 | 0.964707 |
 | Ajuste Gnuplot | 0.445515 | 19.6667 | Not given. |
 
+Además, el tiempo que debe pasar para que el precio del combustible sea de Q30, es de 23 semanas, 1 día y 8 horas aproximadamente. Esto despejando la ecuación g(x) = m*x+b=30, x medido en semanas.
+
 **Gráfica Mínimos Cuadrados**
 
 ![mincuadp1](./img/mincuadp1.png)
@@ -110,4 +112,4 @@ $ ./problema2.x
 #### Resultados
 El valor obtenido de la raíz por medio del método de **bisección** es: (1.007624,0). Comparado con la gráfica de la función sería
 
-![raiz](raiz.png)
+![raiz](./img/raiz.png)
