@@ -47,6 +47,20 @@ int main(){
   } else {
     printf("El valor de la raíz es: %f\n", raiz);
   } // END IF
+
+
+  //6. se crea un archivo con el punto dado y se genera el plot
+  FILE* f;
+  if ((f= fopen("point.dat","wt"))==NULL){
+        puts("Error de escritura");
+        return 1;
+  } // END IF
+  fprintf(f,"%f\t%f\n",raiz,0.0);
+  fclose(f);
+
+  // 6.1. plot
+  system("gnuplot raiz.gp");
+
   return 0;
 } // END Main
 

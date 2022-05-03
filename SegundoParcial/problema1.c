@@ -13,6 +13,7 @@
 //	Librerias
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 
 // 0. Prototipado de funciones y declaracion de variables
@@ -49,6 +50,21 @@ int main(){
 
   puts("El tiempo que le toma al combustible alcanzar su precio límite es de: ");
   printf("%f semanas.\n", (30 - b)/m);
+
+  // 9. Escribimos el archivo de datos y generamos la gráfica
+  FILE* f;
+  if ((f= fopen("data.dat","wt"))==NULL){
+        puts("Error de escritura");
+        return 1;
+  } // END IF
+  for (int i = 0; i < n; i++){
+    fprintf(f,"%f\t%f\n",x[i],y[i]);
+  } // END FOR
+  fclose(f);
+
+  // 10. plot
+  system("gnuplot combustible.gp");
+
   return 0;
 }
 
