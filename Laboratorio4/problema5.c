@@ -25,13 +25,6 @@ int main(){
   puts("Ingrese un número entero positivo.");
   scanf("%d", &n);
 
-  /*
-  while (typeof(n) != int && n < 0){
-    puts("El dato ingresado no es válido.");
-    scanf("%d", &n);
-  } // END WHILE
-  */
-
   //4. utilizacion de la funcion recursiva
   printf("El factorial del número ingresado es: %lld\n", factorial(n));
 

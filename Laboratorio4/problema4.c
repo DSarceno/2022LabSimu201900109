@@ -22,15 +22,16 @@ void suma(float array1[][col], float array2[][col], int m, int n, float result[]
 void resta(float array1[][col], float array2[][col], int m, int n, float result[][col]);
 void prod_matrices(float array1[][col], float array2[][col], int m, int n, float result[][col]);
 //
-float determinante(float array[][col], int n);
-float cofactor(float array[][col], int n, int file, int column);
+float determinante(float array[][col]);
+//float cofactor(float array[][col], int n, int file, int column);
 //
 void transpuesta(float array[][col], int m, int n, float result[][col]);
+void mCofactores(float array[][col], float result[][col]);
 
 // 1. main
 int main(){
   // 2. definiendo las variables a utilizar
-  float matA[fila][col], matB[fila][col], result[fila][col];
+  float matA[fila][col], matB[fila][col], result[fila][col], aux[fila][col];
   float c;
 
   // 3. ingreso de las matrices y la constante
@@ -68,7 +69,7 @@ int main(){
 
   // e)
   puts("e) det(matA).");
-  printf("%f\n", determinante(matA, fila));
+  printf("%f\n", determinante(matA));
   puts("");
 
   // f)
@@ -78,6 +79,12 @@ int main(){
   puts("");
 
   // g)
+  mCofactores(matA, result);
+  transpuesta(result, fila, col, aux);
+  prod_escalar(aux, fila, col, result, 1/determinante(matA));
+  puts("g) inversa de matA.");
+  for (int i = 0; i < fila; i++){ printf("%f,%f,%f\n", result[i][0], result[i][1], result[i][2]); }
+  puts("");
 
   // h)
 
@@ -137,7 +144,7 @@ void prod_matrices(float array1[][col], float array2[][col], int m, int n, float
   } // END FOR
 } // END prod_matrices
 
-
+/* POR METODO DE COFACTORES
 float determinante(float array[][col], int orden){
   float det = 0;
 
@@ -160,13 +167,6 @@ float cofactor(float array[][col], int orden, int file, int column){
       if (i != file && j != column){
         subarray[x][y] = array[i][j];
         y++;
-        /*
-        y++;
-        if (y >= t){
-          x++;
-          y = 0;
-        } // END IF
-        */
       } // END IF
     } // END FOR
     x++;
@@ -174,6 +174,16 @@ float cofactor(float array[][col], int orden, int file, int column){
   // pow(-1, file + column)*
   return pow(-1, file + column)*determinante(subarray, nuevo_orden);
 } // END cofactor
+*/
+
+// REGLA DE SARRUS
+float determinante(float array[][col]){
+  float det = 0;
+  det = (array[0][0]*array[1][1]*array[2][2] + array[0][1]*array[1][2]*array[2][0] +
+    array[0][2]*array[1][0]*array[2][1]) - (array[2][0]*array[1][1]*array[0][2]
+      + array[2][1]*array[1][2]*array[0][0] + array[2][2]*array[0][1]*array[1][0]);
+  return det;
+} // END determinante
 
 
 void transpuesta(float array[][col], int m, int n, float result[][col]){
@@ -185,7 +195,18 @@ void transpuesta(float array[][col], int m, int n, float result[][col]){
 } // END transpuesta
 
 
-
+void mCofactores(float array[][col], float result[][col]){
+  // manualmente
+  result[0][0] = array[1][1]*array[2][2] - array[1][2]*array[2][1];
+  result[0][1] = -(array[1][0]*array[2][2] - array[1][2]*array[2][0]);
+  result[0][2] = array[1][0]*array[2][1] - array[1][1]*array[2][0];
+  result[1][0] = -(array[0][1]*array[2][2] - array[0][2]*array[2][1]);
+  result[1][1] = array[0][0]*array[2][2] - array[0][2]*array[2][0];
+  result[1][2] = -(array[0][0]*array[2][1] - array[0][1]*array[2][0]);
+  result[2][0] = array[0][1]*array[1][2] - array[0][2]*array[1][1];
+  result[2][1] = -(array[0][0]*array[1][2] - array[0][2]*array[1][0]);
+  result[2][2] = array[0][0]*array[1][1] - array[0][1]*array[1][0];
+} // END inversa
 
 
 

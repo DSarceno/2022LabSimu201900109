@@ -16,6 +16,54 @@ Por un error de lectura del problema se realizó de modo que la única interacci
 \end{description}
 
 \subsection{Pseudocógido o Diagrama de Flujo}
+\subsubsection{Algoritmo Merge Sort}
+\paragraph{Función MergeSort(vector, incio, final)}
+\begin{description}
+	\item[Paso 1: ] Definimos donde queremos "partir" la lista: half = (inicio + final)$/2$
+	\item[Paso 2: ] Se inicia la recursividad. Llamada a MergeSort(vector, inicio, half)
+	\item[Paso 3: ] Llamada a MergeSort(vector, half $+$ 1, final)
+	\item[Paso 4: ] Llamada a Merge(vector, inicio, half, final)
+\end{description}
+
+\paragraph{Función Merge(vector, inicio, half, final)}
+\begin{description}
+	\item[Paso 1: ] Se define una lista auxiliar y los iteradores i $=$ start, j $=$ half $+$ 1, k $=$ $0$ y t
+	\item[Paso 2: ] Mientras $i \leq$ half $\& \&$ $j\leq$ final, hacer
+	\begin{description}
+		\item[Paso 2.1: ] k++. Si vector[i] $<$ vector[j] entonces auxiliar[k] = vector[i], i++.
+		\item[Paso 2.2: ] En otro caso auxiliar[k] = vector[j], j++.
+	\end{description}
+	\item[Paso 3: ] Se agrega el elemento sobrante de alguna de las mitades al final de la lista auxiliar. (siempre habrá uno sobrante)
+	\item[Paso 4: ] Reescribir todo en el vector original utlizando el contador "t".
+\end{description}
+
+\subsubsection{Algoritmo Shuffle}
+\paragraph{Función shuffle(vector, length)}
+\begin{description}
+	\item[Paso 1: ] Se declaran variables locales "random\_ position", "step" y "k $=$ 0"
+	\item[Paso 2: ] Mientras int $k <$ length hacer
+		\begin{description}
+			\item[Paso 2.1: ] random\_ position $=$ numero entero random $\in \, [0,\text{length} - 1]$
+			\item[Paso 2.2: ] step $=$ vector[k]
+			\item[Paso 2.3: ] vector[k] = vector[random\_ position]
+			\item[Paso 2.4: ] vector[random\_ position] = step
+		\end{description}
+\end{description}
+
+\subsubsection{Main}
+\begin{description}
+	\item[Paso 1: ] Generación del vector con elementos pares del 2 al 20
+	\item[Paso 2: ] Aplicamos \textit{Shuffle} al vector para aleatorizarlo
+	\item[Paso 3: ] Declaramos la variable de inicio del usuario y una variable control $=$ 0
+	\item[Paso 4: ] Mientras control $==$ 0 hacer
+	\begin{description}
+			\item[Paso 4.1: ] Solicitar el ingreso del caracter "A" o "D"
+			\item[Paso 4.2: ] Si es "A", aplicar MergeSort e imprimir el vector resultante. control = 1.
+			\item[Paso 4.3: ] Si es "D", aplicar MergeSort e imprimir desde el final del vector hasta el inicio. control = 1.
+			\item[Paso 4.4: ] Sino es ninguna, imprimir que no se ingresó ningún valor válido.
+		\end{description}
+\end{description}
+
 
 \subsection{Código}
 
@@ -37,6 +85,14 @@ Al igual que el problema anterior se utiliza el algoritmo merge sort, aunque se 
 \end{description}
 
 \subsection{Pseudocógido o Diagrama de Flujo}
+\begin{description}
+	\item[Paso 1: ] Prototipado de funciones y definición de constantes, en este caso l = 5.
+	\item[Paso 2: ] int vector[l]
+	\item[Paso 3: ] Ingreso de los números por parte del usuario
+	\item[Paso 4: ] Ordenar el vector con el algoritmo Merge Sort mostrado en el problema anterior.
+	\item[Paso 5: ] Impresión del vector ordenado.
+\end{description}
+
 \subsection{Código}
 
 \section{Problema 3}
@@ -73,6 +129,14 @@ almacenarlas en dos vectores, el programa automáticamente debe de mostrar los s
 \end{description}
 
 \subsection{Pseudocógido o Diagrama de Flujo}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/problema3.pdf}
+	\caption{Diagrama de flujo de las diferentes operaciones con vectores.}
+	\label{DFp5}
+\end{figure}
+
+
 \subsection{Código}
 
 
@@ -108,6 +172,9 @@ Sean $A = (a_{ij})$ y $B = (b_{ij})$, con ambas matrices $3\times 3$ y $c\in \R$
 			$$\gamma _{ij} = \sum _{k = 1} ^{n = 3} a_{ik} b_{kj}.$$
 		\item Determinante de la matriz A. Tomando el método de cofactores, se define el menor como el determinante de una matriz $M_{ij}$ que resulta de quitar la $i-$ésima fila y la $j-$ésima columna de la matriz original. Dado esto, se define el cofactor asociacdo a $ij$, como $\mathcal{A}_{ij} = (-1)^{i+j} M_{ij}$. Y el determinante de la matriz se calcula multiplicando cada entrada de cualquier fila (o columna) por su respectivo cofactor, es decir (tomando la fila $1$ como ejemplo)
 			$$\det{A} = \sum _{j = 1} ^3 (-1)^{1 + j} a_{1j} M_{1j}.$$
+		Esta fue la implementación que se quizo hacer, dado que no se pudo por problemas en el código, se utilizó la regla de Sarrus
+			$$ \det{A} = \qty(a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32}) $$
+			$$ - \qty(a_{31}a_{22}a_{13} + a_{32}a_{23}a_{11} + a_{33}a_{12}a_{21}). $$
 		\item Transpuesta de la matriz B. Se intercambian filas por columnas.
 			$$B^t = (b_{ji}).$$
 		\item Inversa de la matriz A. Para calcular la inversa se utiliza la siguiente relación
@@ -126,6 +193,14 @@ Sean $A = (a_{ij})$ y $B = (b_{ij})$, con ambas matrices $3\times 3$ y $c\in \R$
 \end{description}
 
 \subsection{Pseudocógido o Diagrama de Flujo}
+\begin{figure}[H]
+\centering
+\subfigure["Main"]{\includegraphics[scale=0.7]{img/problema4_1.pdf}}\qquad \qquad
+\subfigure[Suma, resta y producto por escalar]{\includegraphics[scale=0.5]{img/problema4_2.pdf}}
+\caption{(a) Diagrama de flujo de la función main. (b) Implementación de la suma y resta de matrices así como el producto por escalar.}
+\label{FDp4}
+\end{figure}
+
 \subsection{Código}
 
 
@@ -146,6 +221,14 @@ Existen muchas otras definiciones, como la función gamma, pero para interés de
 \end{description}
 
 \subsection{Pseudocógido o Diagrama de Flujo}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/problema5.pdf}
+	\caption{Diagrama de flujo de la implementación recursiva de la función factorial.}
+	\label{DFp5}
+\end{figure}
+
+
 \subsection{Código}
 
 
@@ -172,6 +255,19 @@ No hay mucho que añadir, la sumatoria es un bucle con almacenamiento en una var
 \end{description}
 
 \subsection{Pseudocógido o Diagrama de Flujo}
+\begin{description}
+	\item[Paso 1: ] Prototipado de funciones para cada inciso (por simplicidad fueron nombradas con el inciso correspondiente), cuyas entradas son un número entero.
+	\item[Paso 2: ] Ingreso del numero entero $n$ (limite superior de las series).
+	\item[Paso 3: ] Para cada función se realizó exactamente el mismo procedimiento, solo que con diferente término de sumatoria, de modo que el ciclo for general es \\
+	\texttt{Definir la suma como un float, $suma$} \\
+	\texttt{Mientras un iterador sea menor igual que $n$, hacer}\\
+	\texttt{suma $=$ suma $+$ $f_k$}\\
+	\texttt{aumentar en $1$ el iterador}\\
+	\texttt{Devolver "suma"}
+	\item[Paso 4: ] Realizar esto para cada función e imprimir los respectivos resultados.
+\end{description}
+
+
 \subsection{Código}
 
 
