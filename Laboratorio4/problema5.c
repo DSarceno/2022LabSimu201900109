@@ -2,7 +2,7 @@
 //	problema5.c
 //	Diego Sarceno (dsarceno68@gmail.com)
 
-//	Resumen
+//	Función factorial recursiva
 
 //	Codificado del texto: UTF8
 //	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0

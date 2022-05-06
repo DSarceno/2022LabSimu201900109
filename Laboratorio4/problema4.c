@@ -2,7 +2,7 @@
 //	problema4.c
 //	Diego Sarceno (dsarceno68@gmail.com)
 
-//	Resumen
+//	Prorama que implementa diferentes operaciones con matrices.
 
 //	Codificado del texto: UTF8
 //	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0
@@ -21,12 +21,13 @@ void prod_escalar(float array[][col], int m, int n, float result[][col], float c
 void suma(float array1[][col], float array2[][col], int m, int n, float result[][col]);
 void resta(float array1[][col], float array2[][col], int m, int n, float result[][col]);
 void prod_matrices(float array1[][col], float array2[][col], int m, int n, float result[][col]);
-//
+
 float determinante(float array[][col]);
 //float cofactor(float array[][col], int n, int file, int column);
-//
 void transpuesta(float array[][col], int m, int n, float result[][col]);
 void mCofactores(float array[][col], float result[][col]);
+void redGauss(float array[][col], float result[][col]);
+void redGaussJordan(float array[][col], float result[][col]);
 
 // 1. main
 int main(){
@@ -87,10 +88,16 @@ int main(){
   puts("");
 
   // h)
+  redGauss(matA, result);
+  puts("h) reduccion gauss de matA.");
+  for (int i = 0; i < fila; i++){ printf("%f,%f,%f\n", result[i][0], result[i][1], result[i][2]); }
+  puts("");
 
   // i)
-
-
+  redGauss(matB, result);
+  puts("i) reduccion gauss-jordan de matB.");
+  for (int i = 0; i < fila; i++){ printf("%f,%f,%f\n", result[i][0], result[i][1], result[i][2]); }
+  puts("");
 
   return 0;
 } // END MAIN
@@ -144,44 +151,17 @@ void prod_matrices(float array1[][col], float array2[][col], int m, int n, float
   } // END FOR
 } // END prod_matrices
 
-/* POR METODO DE COFACTORES
-float determinante(float array[][col], int orden){
-  float det = 0;
-
-  for (int i = 0; i < orden; i++){
-    det += array[0][i]*cofactor(array, orden, 0, i);
-  } // END FOR
-
-  return det;
-} // END determinante
-
-
-
-float cofactor(float array[][col], int orden, int file, int column){
-  int nuevo_orden = orden - 1;
-  float subarray[nuevo_orden][nuevo_orden];
-  int x = 0, y = 0;
-
-  for (int i = 0; i < orden; i++){
-    for (int j = 0; j < orden; j++){
-      if (i != file && j != column){
-        subarray[x][y] = array[i][j];
-        y++;
-      } // END IF
-    } // END FOR
-    x++;
-  } // END FOR
-  // pow(-1, file + column)*
-  return pow(-1, file + column)*determinante(subarray, nuevo_orden);
-} // END cofactor
-*/
-
 // REGLA DE SARRUS
 float determinante(float array[][col]){
   float det = 0;
-  det = (array[0][0]*array[1][1]*array[2][2] + array[0][1]*array[1][2]*array[2][0] +
-    array[0][2]*array[1][0]*array[2][1]) - (array[2][0]*array[1][1]*array[0][2]
-      + array[2][1]*array[1][2]*array[0][0] + array[2][2]*array[0][1]*array[1][0]);
+  int i = 0, j = 0;
+
+  for (int x = 0; x < 3; x++){
+    i = (1 + x) % 3;
+    j = (2 + x) % 3;
+
+    det += array[0][x]*(array[1][i]*array[2][j] - array[1][j]*array[2][i]);
+  } // END FOR
   return det;
 } // END determinante
 
@@ -209,10 +189,41 @@ void mCofactores(float array[][col], float result[][col]){
 } // END inversa
 
 
+void redGauss(float array[][col], float result[][col]){
+  result = array;
+  for(int i=0;i<=2;i++){
+        for(int j=3;j>=0;j--){
+            result[i][j] = result[i][j]/result[i][i];
+        } // END FOR
+        for(int k=i+1;k<=2;k++){
+            for(int j=3;j>=0;j--){
+                result[k][j] = result[k][j] - result[k][i]*result[i][j];
+            } // END FOR
+        } // END FOR
+    } // END FOR
+} // END redGauss
 
 
 
 
+void redGaussJordan(float array[][col], float result[][col]){
+  result = array;
+  for(int i=0;i<=2;i++){
+        for(int j=3;j>=0;j--){
+            result[i][j] = result[i][j]/result[i][i];
+        }
+        for(int k=i+1;k<=2;k++){
+            for(int j=3;j>=0;j--){
+                result[k][j] = result[k][j] - result[k][i]*result[i][j];
+            }
+        }
+        for (int k=0; k<=i-1;k++){
+            for(int j=3;j>=0;j--){
+                result[k][j] = result[k][j] - result[k][i]*result[i][j];
+            }
+        }
+    }
+} // END redGaussJordan
 
 
 

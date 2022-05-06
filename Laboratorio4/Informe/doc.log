@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  5 MAY 2022 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  5 MAY 2022 21:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1389,6 +1389,9 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 
 
+LaTeX Warning: Label `FDp4' multiply defined.
+
+
 LaTeX Warning: Label `DFp5' multiply defined.
 
 )
@@ -1641,71 +1644,99 @@ LaTeX Font Info:    Trying to load font information for U+futs on input line 33
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
 ) [2] (./content.tex
-[3] [4]
+[3] [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 121.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 368.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 121.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 368.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/problema3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<img/problema3.pdf, id=238, 550.15535pt x 578.16pt>
+<img/problema3.pdf, id=489, 550.15535pt x 578.16pt>
 File: img/problema3.pdf Graphic file (type pdf)
 <use img/problema3.pdf>
-Package pdftex.def Info: img/problema3.pdf  used on input line 134.
+Package pdftex.def Info: img/problema3.pdf  used on input line 381.
 (pdftex.def)             Requested size: 330.09575pt x 346.89867pt.
-[5]
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
-62.
- (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [6pdfTeX warning (ex
-t4): destination with the same identifier (name{figure.1}) has been already use
-d, duplicate ignored
+[10] [11pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.164 	\begin
-             {enumerate}[a)] <./img/problema3.pdf>]
+l.405   float 
+              resvec[3]; <./img/problema3.pdf>] [12]
+Overfull \vbox (11.8094pt too high) has occurred while \output is active []
+
+
+[13]
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 5
+07.
+ (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [14]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/problema4_1.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<img/problema4_1.pdf, id=320, 117.43875pt x 388.45125pt>
+<img/problema4_1.pdf, id=713, 117.43875pt x 388.45125pt>
 File: img/problema4_1.pdf Graphic file (type pdf)
 <use img/problema4_1.pdf>
-Package pdftex.def Info: img/problema4_1.pdf  used on input line 198.
+Package pdftex.def Info: img/problema4_1.pdf  used on input line 546.
 (pdftex.def)             Requested size: 82.20654pt x 271.914pt.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/problema4_2.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<img/problema4_2.pdf, id=321, 433.62pt x 560.0925pt>
+<img/problema4_2.pdf, id=714, 433.62pt x 560.0925pt>
 File: img/problema4_2.pdf Graphic file (type pdf)
 <use img/problema4_2.pdf>
-Package pdftex.def Info: img/problema4_2.pdf  used on input line 199.
+Package pdftex.def Info: img/problema4_2.pdf  used on input line 547.
 (pdftex.def)             Requested size: 216.80946pt x 280.04556pt.
-[7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/problema4_3.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<img/problema4_3.pdf, id=715, 172.54462pt x 641.39626pt>
+File: img/problema4_3.pdf Graphic file (type pdf)
+<use img/problema4_3.pdf>
+Package pdftex.def Info: img/problema4_3.pdf  used on input line 554.
+(pdftex.def)             Requested size: 86.2721pt x 320.69734pt.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/problema4_4.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<img/problema4_4.pdf, id=716, 569.12625pt x 560.0925pt>
+File: img/problema4_4.pdf Graphic file (type pdf)
+<use img/problema4_4.pdf>
+Package pdftex.def Info: img/problema4_4.pdf  used on input line 555.
+(pdftex.def)             Requested size: 284.56242pt x 280.04556pt.
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.221 \end{description}
-                        <./img/problema4_1.pdf> <./img/problema4_2.pdf>]
+l.559 
+       <./img/problema4_1.pdf> <./img/problema4_2.pdf>] [16pdfTeX warning (ext4
+): destination with the same identifier (name{figure.3}) has been already used,
+ duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.575 //f
+         loat cofactor(float array[][col], int n, int file, int column); <./img
+/problema4_3.pdf> <./img/problema4_4.pdf>] [17] [18] [19] [20] [21]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/problema5.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<img/problema5.pdf, id=416, 239.39438pt x 379.4175pt>
+<img/problema5.pdf, id=1115, 239.39438pt x 379.4175pt>
 File: img/problema5.pdf Graphic file (type pdf)
 <use img/problema5.pdf>
-Package pdftex.def Info: img/problema5.pdf  used on input line 226.
+Package pdftex.def Info: img/problema5.pdf  used on input line 802.
 (pdftex.def)             Requested size: 119.69688pt x 189.70828pt.
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.254 	\item[$\leftarrow$: ]
-                             Número entero o flotante, según sea el caso d...
- <./img/problema5.pdf>]) [10]
+l.832 /*
+         <./img/problema5.pdf>] [23] [24]) [25]
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -1729,13 +1760,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 50502 strings out of 481239
- 1226058 string characters out of 5920376
- 1858845 words of memory out of 5000000
- 64826 multiletter control sequences out of 15000+600000
+ 51688 strings out of 481239
+ 1241148 string characters out of 5920376
+ 2020845 words of memory out of 5000000
+ 65330 multiletter control sequences out of 15000+600000
  545427 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,15n,100p,861b,1191s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,15n,100p,861b,2452s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
@@ -1745,16 +1776,17 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/fourier/fourier-orns.pfb>
-Output written on doc.pdf (10 pages, 314385 bytes).
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/fourier/fourier-orns.pfb>
+Output written on doc.pdf (25 pages, 411218 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 482 compressed objects within 5 object streams
- 89 named destinations out of 1000 (max. 500000)
- 355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1478 PDF objects out of 1728 (max. 8388607)
+ 1405 compressed objects within 15 object streams
+ 769 named destinations out of 1000 (max. 500000)
+ 365 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,33 +11,33 @@
 \contentsline {paragraph}{Función shuffle(vector, length)}{4}{section*.4}%
 \contentsline {subsubsection}{\numberline {1.4.3}Main}{4}{subsubsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.5}Código}{4}{subsection.1.5}%
-\contentsline {section}{\numberline {2}Problema 2}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Enunciado}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Metodología}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Variables de entrada y salida}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Pseudocógido o Diagrama de Flujo}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Código}{5}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Problema 3}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Enunciado}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Metodología}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Variables de entrada y salida}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Pseudocógido o Diagrama de Flujo}{6}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Código}{6}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Problema 4}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Enunciado}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Metodología}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Variables de entrada y salida}{7}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Pseudocógido o Diagrama de Flujo}{8}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Código}{8}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Problema 5}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Enunciado}{8}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Metodología}{8}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Variables de entrada y salida}{9}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Pseudocógido o Diagrama de Flujo}{9}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Código}{9}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Problema 6}{9}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Enunciado}{9}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Metodología}{9}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Variables de entrada y salida}{10}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Pseudocógido o Diagrama de Flujo}{10}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Código}{10}{subsection.6.5}%
+\contentsline {section}{\numberline {2}Problema 2}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Enunciado}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Metodología}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Variables de entrada y salida}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Pseudocógido o Diagrama de Flujo}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Código}{8}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Problema 3}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Enunciado}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Metodología}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Variables de entrada y salida}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Pseudocógido o Diagrama de Flujo}{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Código}{11}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Problema 4}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Enunciado}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Metodología}{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Variables de entrada y salida}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Pseudocógido o Diagrama de Flujo}{15}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Código}{16}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Problema 5}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Enunciado}{21}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Metodología}{21}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Variables de entrada y salida}{22}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Pseudocógido o Diagrama de Flujo}{22}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Código}{22}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Problema 6}{23}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Enunciado}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Metodología}{23}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Variables de entrada y salida}{23}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Pseudocógido o Diagrama de Flujo}{23}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Código}{24}{subsection.6.5}%
